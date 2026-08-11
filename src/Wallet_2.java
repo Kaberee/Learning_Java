@@ -40,7 +40,7 @@ System.out.println("Balance after depositing is:"+balance);
     }
     static void swap(Wallet wa, Wallet wb){
         Wallet temp = wa;
-        wa = wb;
+        wa = wb;  //Swapping by reference is not possible in java
         wb = temp;
 
     }
@@ -71,7 +71,7 @@ w3.display();
 
 Wallet.swap(w1,w2);
 
-System.out.println("Balance after swapping is:"+" "+ w1.getBalance());
+System.out.println("Balance after swapping is:"+" "+ w1.getBalance());  //Balance will stay the same after "swappping"
 
 System.out.println("Balance after swapping is:"+" "+ w2.getBalance());
 
