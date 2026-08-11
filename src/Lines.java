@@ -5,7 +5,7 @@ public class Lines{
         String a=sc.nextLine();
         int length=a.length();
         System.out.println(length);
-        String name="Kaberee cutie";
+        String name="Teddy cutie";
         char letter=name.charAt(2);
         int index=name.indexOf("e");
         int last=name.lastIndexOf("e");
