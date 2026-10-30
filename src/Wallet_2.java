@@ -39,19 +39,19 @@ System.out.println("Balance after depositing is:"+balance);
         System.out.println("Balance after bonus is:"+w.balance);
     }
     static void swap(Wallet wa, Wallet wb){
-        int temp = wa.balance;
-        wa.balance = wb.balance;
-        wb.balance = temp;
+        Wallet temp = wa;
+        wa = wb;
+        wb = temp;
 
     }
 
     int getBalance(){
         return balance;
     }
-
 }
 
 public class Wallet_2{
+
     public static void main(String[]args){
 
 Wallet w1=new Wallet();
