@@ -1,10 +1,10 @@
-class Student{
+class Student1{
     private String name;
     private int semester;
     private final int id;
     private static int count=0;
 
-    Student(String name, int semester){
+    Student1(String name, int semester){
         this.name=name;
         this.semester=semester;
         id=count++;
@@ -37,7 +37,7 @@ private String bloodGroup;
    IDCard(String bloodGroup){
     this.bloodGroup=bloodGroup;
 }
-void display(Student s){
+void display(Student1 s){
     System.out.println("The blood group of the student is: "+bloodGroup);
     System.out.println("The number of students is: "+ count);
     System.out.println("The id of students is: "+ s.id);
@@ -47,20 +47,20 @@ void display(Student s){
 
 public class Practice_problem3{
     public static void main(String [] args){
-        Student s1=new Student("Kaberee", 3);
-        Student s2=new Student ("Muhib", 3);
-        Student.Course c1=s1.new Course("CA", 3);
-        Student.Course c2=s2.new Course("Economics", 3);
+        Student1 first=new Student1("Kaberee", 3);
+        Student1 second=new Student1 ("Muhib", 3);
+        Student1.Course c1=first.new Course("CA", 3);
+        Student1.Course c2=second.new Course("Economics", 3);
         c1.increaseCredits(5);
         c2.increaseCredits(2);
-        Student.IDCard id1= new  Student.IDCard("A+");
-        Student.IDCard id2= new  Student.IDCard("O-");
-s1.display();
-        s2.display();
+        Student1.IDCard id1= new  Student1.IDCard("A+");
+        Student1.IDCard id2= new  Student1.IDCard("O-");
+first.display();
+        second.display();
         c1.display();
         c2.display();
-        id1.display(s1);
-        id2.display(s2);
+        id1.display(first);
+        id2.display(second);
 
     }
 }

@@ -1,10 +1,10 @@
-class Computer{
+class Computers{
     private String model;
     private int price;
     private final int id;
     private static int count=0;
 
-    Computer(String model, int price){
+    Computers(String model, int price){
         this.model=model;
         this.price=price;
         id=count++;
@@ -42,10 +42,10 @@ void display(){
 
 public class Practice_problem2{
     public static void main(String[]args){
-Computer c1=new Computer("DELL",50000);
-Computer c2=new Computer("HP", 60000);
-Computer.Processor p1=c1.new Processor(4);
-Computer.Processor p2=c2.new Processor(8);
+Computers c1=new Computers("DELL",50000);
+Computers c2=new Computers("HP", 60000);
+Computers.Processor p1=c1.new Processor(4);
+Computers.Processor p2=c2.new Processor(8);
 p1.upgrade(2);
 p2.upgrade(4);
 Computer.USB usb1= new Computer.USB(3);

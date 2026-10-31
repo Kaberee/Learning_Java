@@ -45,7 +45,7 @@ void display(Student s){
     }
 }
 
-public class Practice_problem3{
+public class Student_management{
     public static void main(String [] args){
         Student s1=new Student("Kaberee", 3);
         Student s2=new Student ("Muhib", 3);

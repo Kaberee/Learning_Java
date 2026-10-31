@@ -40,7 +40,7 @@ void display(){
     }
 }
 
-public class Practice_problem2{
+public class Nested_class{
     public static void main(String[]args){
 Computer c1=new Computer("DELL",50000);
 Computer c2=new Computer("HP", 60000);
